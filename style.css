@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+:root {
+  --bg-py: #272a2d;
+  --bg-sy: #3c3c3c;
+  --bg-white: #fcfcfc;
+  --bg-gray: #ddd;
+}
+
+.register {
+  width: 100%;
+  height: 100vh;
+  background: rgb(98, 169, 233);
+  background: linear-gradient(
+    160deg,
+    rgba(98, 169, 233, 1) 30%,
+    rgba(223, 94, 237, 1) 100%
+  );
+
+  display: grid;
+  place-items: center;
+}
+
+.register__title {
+  font-size: 30px;
+  color: var(--bg-py);
+  position: relative;
+  color: var(--bg-sy);
+}
+
+.register__title::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 25px;
+  transform: translateX(-50%);
+
+  width: 50px;
+  height: 5px;
+  background: rgb(98, 169, 233);
+  background: linear-gradient(
+    160deg,
+    rgba(98, 169, 233, 1) 30%,
+    rgba(223, 94, 237, 1) 100%
+  );
+  border-radius: 6px;
+}
+
+.wrapper {
+  width: 800px;
+  background: var(--bg-white);
+  border-radius: 10px;
+  padding: 30px 25px;
+}
+
+.register__form {
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  width: calc(50% - 10px);
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.gender {
+  width: 100%;
+}
+
+.gender-options label {
+  display: inline-block;
+  margin-right: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.gender-options input {
+  margin-right: 5px;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(
+    160deg,
+    rgba(98, 169, 233, 1) 30%,
+    rgba(223, 94, 237, 1) 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+  background: rgb(98, 169, 233);
+  background: linear-gradient(
+    333deg,
+    rgba(98, 169, 233, 1) 5%,
+    rgba(223, 94, 237, 1) 100%
+  );
+}
+
+/* ------------------------------------------------- */
+
+.fon__color {
+  width: 100%;
+  height: 100vh;
+  background: rgb(86, 41, 223);
+  background: linear-gradient(
+    45deg,
+    rgba(86, 41, 223, 1) 20%,
+    rgba(237, 94, 207, 1) 100%
+  );
+  display: grid;
+  place-items: center;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  border-bottom: 2px solid var(--bg-py);
+  box-shadow: 0 0 20px var(--bg-py);
+}
+
+.table th,
+.table td {
+  padding: 10px 16px;
+}
+
+.table thead tr {
+  background: var(--bg-py);
+  color: var(--bg-white);
+  text-align: left;
+}
+
+.table tbody tr:nth-child(odd) {
+  background: var(--bg-white);
+}
+
+.table tbody tr:nth-child(even) {
+  background: var(--bg-gray);
+}
+
+.table th:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+.table th:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+.table tfoot td {
+  text-align: center;
+  color: var(--bg-white);
+  font-weight: 600;
+  background: var(--bg-sy);
+  border-radius: 0 0 10px 10px;
+}
